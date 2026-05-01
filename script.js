@@ -359,12 +359,7 @@ document.getElementById('fc-prev').addEventListener('click',()=>{
 });
 
 // Next: mark current word as learned, then advance
-const test = true
 document.getElementById('fc-next').addEventListener('click',()=>{
-   if test{
-      currentIndex++;
-      test = false
-   }
   // Auto-mark current word learned before moving forward
   markLearned(currentSetWords[currentIndex].word);
   if(currentIndex < currentSetWords.length-1){
