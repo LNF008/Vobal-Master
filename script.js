@@ -361,7 +361,7 @@ document.getElementById('fc-prev').addEventListener('click',()=>{
 // Next: mark current word as learned, then advance
 document.getElementById('fc-next').addEventListener('click',()=>{
   // Auto-mark current word learned before moving forward
-  markLearned(currentSetWords[currentIndex].word);
+  markLearned(currentSetWords[currentIndex+1].word);
   if(currentIndex < currentSetWords.length-1){
     currentIndex++;
     renderCard();
