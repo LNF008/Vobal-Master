@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>VocabMaster – B1–C1 / IELTS</title>
+  <link id="favicon" rel="icon" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link
     href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,300;0,600;0,700;1,300&family=DM+Sans:wght@300;400;500;600&display=swap"
@@ -168,6 +169,20 @@
   </div>
   <script src="vocab-data.js"></script>
   <script src="script.js"></script>
+  <script>
+  const emoji = "📚";
+
+  const canvas = document.createElement("canvas");
+  canvas.width = 64;
+  canvas.height = 64;
+
+  const ctx = canvas.getContext("2d");
+  ctx.font = "54px serif";
+  ctx.fillText(emoji, 0, 54);
+
+  const link = document.getElementById("favicon");
+  link.href = canvas.toDataURL();
+</script>
 </body>
 
 </html>
